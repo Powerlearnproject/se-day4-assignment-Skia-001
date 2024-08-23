@@ -1,0 +1,173 @@
+## Step-by-step procedure on creating a GitHub repository, connecting it to a local folder, and making commits and pushes.
+Step 1: Log in to GitHub
+•	Open a web browser and navigate to GitHub.com
+•	Enter your GitHub username and password to log in to your account
+Step 2: Click on the "New" button
+•	In the top-right corner of the GitHub dashboard, click on the "New" button
+•	This will take you to the "Create a new repository" page
+Step 3: Enter repository details
+•	In the "Repository name" field, enter "PLPBasicGitAssignment" (or any other name you prefer)
+•	In the "Description" field, enter a brief description of your repository (optional)
+•	Choose a license for your repository (optional)
+•	Choose a .gitignore template (optional)
+Step 4: Initialize with a README file
+•	Under the "Initialize this repository with" section, select the "Add a README file" checkbox
+•	This will create a new README file in your repository with a default template
+Step 5: Create the repository
+•	Click on the "Create repository" button
+•	GitHub will create a new repository with the specified name and initialize it with a README file
+Step 6: Verify the repository
+•	You will be taken to the repository page, where you can see the newly created README file
+•	Verify that the repository name, description, and license (if chosen) are correct
+
+
+2.	Local Folder Setup:
+•	Create a new folder on your local machine (e.g., "PLPBasicGitAssignment").
+•	Open a terminal or command prompt and navigate to the created folder.
+ 
+Here is the step-by-step procedure for Task 2: Local Setup:
+Step 1: Create a new folder on your local machine
+•	Open File Explorer (on Windows) or Finder (on Mac)
+•	Navigate to the location where you want to create the new folder (e.g., Desktop, Documents, etc.)
+•	Right-click on an empty area and select "New" > "Folder" (on Windows) or click on "File" > "New Folder" (on Mac)
+•	Name the folder "PLPBasicGitAssignment" (or any other name you prefer)
+Step 2: Open a terminal or command prompt
+•	On Windows:
+•	Press the Windows key + R to open the Run dialog box
+•	Type "cmd" and press Enter to open the Command Prompt
+Step 3: Navigate to the created folder
+•	In the terminal or command prompt, type the following command to navigate to the created folder:
+cd /path/to/PLPBasicGitAssignment
+Replace /path/to/PLPBasicGitAssignment with the actual path to the folder you created. For example:
+cd C:\Users\YourUsername\Desktop\PLPBasicGitAssignment
+on Windows
+•	Press Enter to execute the command
+Step 4: Verify the current directory
+•	Type the following command to verify that you are in the correct directory:
+pwd
+This will display the current working directory. Make sure it matches the path to the folder you created.
+
+
+Step 1: Verify you are in the correct directory
+•	Make sure you are still in the terminal or command prompt and in the correct directory (i.e., the "PLPBasicGitAssignment" folder)
+•	Type the following command to verify:
+pwd
+This should display the path to the "PLPBasicGitAssignment" folder
+Step 2: Initialize a new Git repository
+•	Type the following command to initialize a new Git repository:
+VerifyOpen In EditorEditCopy code
+git init
+This command will create a new Git repository in the current directory
+Step 3: Verify the Git repository initialization
+•	Type the following command to verify that the Git repository has been initialized:
+git status
+This command will display a message indicating that the repository is empty and that you are on the "master" branch
+Step 4: Verify the presence of the .git folder
+•	Type the following command to verify that the .git folder has been created:
+ls -a
+This command will display a list of files and folders in the current directory, including the hidden .git folder
+Step 5: Verify the Git configuration
+•	Type the following command to verify that the Git configuration is set up correctly:
+git config --list
+This command will display a list of Git configuration settings, including the repository name, user name, and email address
+
+Step 1: Verify you are in the correct directory
+•	Make sure you are still in the terminal or command prompt and in the correct directory (i.e., the "PLPBasicGitAssignment" folder)
+•	Type the following command to verify:
+pwd
+This should display the path to the "PLPBasicGitAssignment" folder
+Step 2: Add the GitHub repository as a remote
+•	Type the following command to add the GitHub repository as a remote:
+git remote add origin https://github.com/your-username/PLPBasicGitAssignment.git
+Replace your-username with your actual GitHub username, and PLPBasicGitAssignment with the actual name of your GitHub repository.
+Example: git remote add origin https://github.com/Skia-001/PLPBasicGitAssignment.git
+Step 3: Verify the remote repository
+•	Type the following command to verify that the remote repository has been added:
+git remote -v
+This command will display the URL of the remote repository, which should match the URL of your GitHub repository.
+Step 4: Set the upstream tracking information
+•	Type the following command to set the upstream tracking information:
+git branch --set-upstream-to origin/master master
+This command sets the upstream tracking information for the master branch, which allows you to push and pull changes from the remote repository.
+Step 5: Verify the upstream tracking information
+•	Type the following command to verify that the upstream tracking information has been set:
+git branch -vv
+This command will display the branch information, including the upstream tracking information.
+Step 6: Push the local repository to the remote repository
+•	Type the following command to push the local repository to the remote repository:
+git push -u origin master
+This command pushes the local master branch to the remote repository and sets the upstream tracking information.
+
+Step 1: Create a new text file
+•	Open a terminal or command prompt and navigate to the local folder (i.e., the "PLPBasicGitAssignment" folder)
+•	Type the following command to create a new text file:
+touch hello.txt
+This command creates a new empty file called hello.txt in the current directory.
+Step 2: Open the text file in a text editor
+•	Type the following command to open the hello.txt file in a text editor:
+nano hello.txt
+This command opens the hello.txt file in the nano text editor. You can use any other text editor of your choice, such as vim, emacs, or notepad.
+Step 3: Add a simple text message
+•	Type the following text message into the hello.txt file:
+Hello, Git!
+•	Press Ctrl+X to exit the nano editor, then press Y to save the changes, and finally press Enter to confirm the file name.
+Step 4: Verify the file contents
+•	Type the following command to verify the contents of the hello.txt file:
+cat hello.txt
+This command displays the contents of the hello.txt file, which should be the text message "Hello, Git!".
+
+Step 1: Verify you are in the correct directory
+•	Make sure you are still in the terminal or command prompt and in the correct directory (i.e., the "PLPBasicGitAssignment" folder)
+•	Type the following command to verify:
+pwd
+This should display the path to the "PLPBasicGitAssignment" folder
+Step 2: Verify the status of your local repository
+•	Type the following command to verify the status of your local repository:
+git status
+This command displays the status of your local repository, including any changes that need to be committed or pushed.
+Step 3: Push the committed changes to your GitHub repository
+•	Type the following command to push the committed changes to your GitHub repository:
+git push -u origin main
+Here's what this command does:
+•	git push: pushes the committed changes to the remote repository
+•	-u: sets the upstream tracking information for the branch
+•	origin: specifies the remote repository (in this case, your GitHub repository)
+•	main: specifies the branch to push (in this case, the main branch)
+Step 4: Enter your GitHub credentials (if prompted)
+•	If you haven't set up SSH keys or haven't cached your GitHub credentials, you may be prompted to enter your GitHub username and password.
+•	Enter your credentials to authenticate with GitHub.
+Step 5: Verify the push was successful
+•	Once the push is complete, you should see a success message indicating that the changes have been pushed to your GitHub repository.
+•	You can also verify this by checking your GitHub repository online, where you should see the updated file (hello.txt) and the commit message.
+
+•	Visit your GitHub repository in a web browser and confirm that the hello.txt file and commit message are visible.
+ 
+Here is the step-by-step procedure to visit your GitHub repository in a web browser and confirm that the hello.txt file and commit message are visible:
+Step 1: Open a web browser
+•	Open a web browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.
+Step 2: Navigate to GitHub
+•	Type the following URL in the address bar of your web browser:
+https://github.com
+•	Press Enter to load the GitHub website.
+Step 3: Log in to your GitHub account
+•	Click on the "Sign in" button in the top right corner of the GitHub website.
+•	Enter your GitHub username and password to log in to your account.
+•	Click on the "Sign in" button to authenticate.
+Step 4: Navigate to your repository
+•	Once you are logged in, click on your profile picture or username in the top right corner of the GitHub website.
+•	Click on "Your repositories" from the dropdown menu.
+•	Find your repository (e.g., "PLPBasicGitAssignment") in the list and click on it.
+Step 5: Verify the hello.txt file is visible
+•	In your repository, click on the "Code" tab.
+•	You should see a list of files and folders in your repository.
+•	Find the hello.txt file in the list and click on it.
+•	Verify that the contents of the file match what you committed earlier (i.e., "Hello, Git!").
+Step 6: Verify the commit message is visible
+•	Click on the "Commits" tab in your repository.
+•	You should see a list of commits, including the one you made earlier.
+•	Find the commit with the message "Initial commit" (or the message you entered earlier) and click on it.
+•	Verify that the commit message and details match what you committed earlier.
+Step 7: Confirm everything is in order
+•	Take a moment to review your repository and confirm that everything is in order.
+•	You should see the hello.txt file and the commit message you entered earlier.
+
